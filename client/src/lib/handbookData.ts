@@ -312,7 +312,7 @@ export const ROBBERIES: RobberyType[] = [
     requiredItems: ['USB'],
     minPD: 6,
     color: 'outlands',
-    cityRules: {
+    outlandsRules: {
       police: '6–8 officers',
       robbers: '6–7 robbers',
       robberVehicles: 'Max 3 including 1 helicopter',
