@@ -696,6 +696,23 @@ export const VEHICLE_TYPES = {
   ems: ['Special handling category'],
 };
 
+// ============================================================
+// DISCIPLINE LEVELS (from PDF — not displayed in handbook UI)
+// ============================================================
+
+export const DISCIPLINE_LEVELS = {
+  level1_minor: {
+    title: 'Level 1 — Minor',
+    penalty: 'Warning / 6-12 hour ban',
+    examples: [
+      'OOC slip',
+      'Minor mic spam',
+      'UNWANTED SIT TRIGGERING',
+      'Minor dress code issue',
+    ],
+  },
+};
+
 export const LORE_PARAGRAPHS = [
   'Spadikam was once one connected city and territory.',
   'As organized crime spread from the city into the outer territories, law enforcement lost the ability to control the full map.',
