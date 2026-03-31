@@ -556,7 +556,7 @@ export default function Home() {
                       ['Admin Oversight', 'Strict / Immediate', 'Moderate'],
                       ['Gang Activity', 'Prohibited', 'Fully Active'],
                       ['PvP Rules', 'Strict Buildup Required', 'Allowed with RP Logic'],
-                      ['Warning Fire', 'Always Required', 'Required (exceptions apply)'],
+                       ['Warning Fire', 'Always Required', 'Required'],
                     ].map(([aspect, city, outlands]) => (
                       <tr key={aspect}>
                         <td className="font-mono text-xs text-slate-500 font-semibold">{aspect}</td>
