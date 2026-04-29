@@ -40,7 +40,7 @@ export const NAV_SECTIONS: Section[] = [
   { id: 'stcf', slug: 'stcf', title: 'STCF (Police)', shortTitle: 'STCF', color: 'city', icon: '◈', description: 'Police force rules and citizen-to-STCF conduct' },
   { id: 'smu', slug: 'smu', title: 'SMU (EMS)', shortTitle: 'SMU', color: 'smu', icon: '◉', description: 'Emergency medical services rules and operations' },
   { id: 'gangs', slug: 'gangs', title: 'Gang Systems', shortTitle: 'Gangs', color: 'outlands', icon: '⬡', description: 'Gang formation, identity, conduct, and communication' },
-  { id: 'gang-war', slug: 'gang-war', title: 'Gang War / Breach', shortTitle: 'War/Breach', color: 'outlands', icon: '⚑', description: 'Pre-war, war declaration, and gang house breach rules' },
+  { id: 'gang-war', slug: 'gang-war', title: 'Gang War', shortTitle: 'War', color: 'outlands', icon: '⚑', description: 'Pre-war, war declaration, and gang war rules' },
   { id: 'developer', slug: 'developer', title: 'Developer Appendix', shortTitle: 'Dev', color: 'lore', icon: '◈', description: 'Vehicle handling balance and faction vehicle reference' },
   { id: 'lore', slug: 'lore', title: 'Lore', shortTitle: 'Lore', color: 'lore', icon: '◉', description: 'Spadikam: The Divided Land — origin story' },
 ];
@@ -320,7 +320,7 @@ export const ROBBERIES: RobberyType[] = [
       weapons: 'Assault Rifles, SMG, or Pistols (same primary category)',
       hostage: 'Max 1 hostage; clear communication required',
       demands: 'Maximum 3 demands',
-      notes: ['Code 99 not allowed while holding a hostage', 'PD will not issue breach chat during active Code 99'],
+      notes: ['Code 99 not allowed while holding a hostage'],
     }
   },
   {
@@ -600,7 +600,7 @@ export const GANG_RULES: RuleBlock[] = [
     rules: [
       { id: 'gcp-1', text: 'Each gang may designate up to 5 bench/crew players within the 35-member limit.', type: 'warning' },
       { id: 'gcp-2', text: 'Bench players are for communication RP only and must be updated every Sunday before restart.' },
-      { id: 'gcp-3', text: 'Bench players cannot participate in wars, turf, pre-war, breach, or active combat situations.', type: 'warning' },
+      { id: 'gcp-3', text: 'Bench players cannot participate in wars, turf, pre-war, or active combat situations.', type: 'warning' },
       { id: 'gcp-4', text: 'Bench players are not counted toward gang war or situation member requirements.' },
       { id: 'gcp-5', text: 'If unexpectedly fired upon before a formal situation begins, a bench player may defend temporarily, but once a formal situation or war begins, they must leave immediately.' },
     ]
@@ -611,7 +611,7 @@ export const GANG_RULES: RuleBlock[] = [
     color: 'outlands',
     rules: [
       { id: 'gsc-1', text: 'All gang situations require valid RP initiation and clear communication.' },
-      { id: 'gsc-2', text: 'Gang chat may be used for war calls, meeting calls, coordination, and breach calls only.' },
+      { id: 'gsc-2', text: 'Gang chat may be used for war calls, meeting calls, and coordination only.' },
       { id: 'gsc-3', text: 'Spam, trolling, fake calls, misleading calls, and unnecessary provocation in gang chat are prohibited.', type: 'warning' },
       { id: 'gsc-4', text: 'Gang chat must not be used inside the City to continue, threaten, pressure, or re-initiate gang conflicts.', type: 'warning' },
       { id: 'gsc-5', text: 'Official gang calls must clearly identify both gangs and the type of call.' },
@@ -665,18 +665,13 @@ export const WAR_RULES: RuleBlock[] = [
     ]
   },
   {
-    id: 'breach',
-    title: 'Gang House Breach',
-    color: 'outlands',
+    id: 'breach-discontinued',
+    title: 'Gang House Breach — DISCONTINUED',
+    color: 'warning',
     rules: [
-      { id: 'b-1', text: 'A breach is a forced confrontation when a gang retreats and holds inside its gang house instead of properly continuing the situation.' },
-      { id: 'b-2', text: 'Breach after initial situation: if a gang retreats to its gang house and remains there for more than 45 minutes after an initial situation, the opposing gang may call a breach.', type: 'warning' },
-      { id: 'b-3', text: 'Breach after war declaration: if a war has already been declared and one side holds in its gang house for more than 15 minutes, the opposing gang may breach.', type: 'warning' },
-      { id: 'b-4', text: 'Breach after war decline: if a declared war is declined, the opposing gang gains breach rights.', type: 'warning' },
-      { id: 'b-5', text: 'Breach must be announced clearly in war chat, e.g.: "We [Gang B] are breaching [Gang A]\'s gang house."' },
-      { id: 'b-6', text: 'After a breach call, defenders get 10 minutes to prepare. During that time, the attacking gang must remain at least 100 meters away.', type: 'warning' },
-      { id: 'b-7', text: 'During an active breach, defenders may not leave the gang house or operate from outside it.', type: 'warning' },
-      { id: 'b-8', text: 'Gang houses are not safe zones and may not be used to stall, avoid, or endlessly delay situations.', type: 'warning' },
+      { id: 'bd-1', text: 'Gang house breaches are no longer part of the Spadikam roleplay system.' },
+      { id: 'bd-2', text: 'Gang houses may no longer be forcibly breached by opposing gangs.' },
+      { id: 'bd-3', text: 'If a gang retreats to their gang house during a conflict, the situation must be resolved through roleplay, negotiation, or admin intervention.' },
     ]
   }
 ];
