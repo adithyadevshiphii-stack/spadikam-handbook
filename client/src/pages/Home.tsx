@@ -714,9 +714,8 @@ export default function Home() {
               {[
                 { step: '01', label: 'Initial Clash', desc: 'Killing, hostage result, or retaliatory act between gangs', color: 'neutral' as FactionColor },
                 { step: '02', label: 'Pre-War Stage', desc: 'Up to 24 hours. Max 6 vehicles + 1 helicopter. Official outfits required.', color: 'warning' as FactionColor },
-                { step: '03', label: 'War Declaration', desc: 'Valid RP reason + face-to-face meeting required. 13–16 members.', color: 'outlands' as FactionColor },
+                { step: '03', label: 'War Declaration', desc: 'Valid RP reason + face-to-face meeting required. Max 5 members.', color: 'outlands' as FactionColor },
                 { step: '04', label: 'Active War', desc: 'Outlands only. "Yes All Down" to conclude. 72hr cooldown after.', color: 'outlands' as FactionColor },
-                { step: '05', label: 'Breach (if applicable)', desc: 'After 45min retreat (initial) or 15min (war declared). 10min prep time.', color: 'warning' as FactionColor },
               ].map((item) => (
                 <div key={item.step} className="relative flex gap-4 mb-4 pl-10">
                   <div className={`absolute left-2 w-5 h-5 rounded-full border-2 flex items-center justify-center text-[9px] font-mono font-bold ${
@@ -738,28 +737,7 @@ export default function Home() {
               {WAR_RULES.map(block => <RuleCard key={block.id} block={block} />)}
             </div>
 
-            {/* Breach Timers Quick Ref */}
-            <div className="mt-6 card-warning rule-card rounded-r-md">
-              <div className="px-5 py-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <AlertTriangle size={14} className="text-amber-400" />
-                  <span className="text-amber-400 font-semibold text-sm">Breach Timer Quick Reference</span>
-                </div>
-                <div className="grid sm:grid-cols-3 gap-3">
-                  {[
-                    { trigger: 'After Initial Situation', timer: '45 min', desc: 'Gang retreats to house' },
-                    { trigger: 'After War Declaration', timer: '15 min', desc: 'One side holds in house' },
-                    { trigger: 'After Breach Call', timer: '10 min', desc: 'Defender prep time' },
-                  ].map(item => (
-                    <div key={item.trigger} className="bg-amber-500/5 border border-amber-500/20 rounded p-3">
-                      <div className="text-amber-300 font-mono text-xl font-bold">{item.timer}</div>
-                      <div className="text-xs text-amber-400/80 font-semibold mt-1">{item.trigger}</div>
-                      <div className="text-xs text-slate-500 mt-0.5">{item.desc}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+
           </section>
 
           {/* ===== DEVELOPER APPENDIX ===== */}
