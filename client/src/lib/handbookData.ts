@@ -107,6 +107,18 @@ export const GLOBAL_RULES: RuleBlock[] = [
       { id: 'wf-4', text: 'One bullet in the air followed by immediate lethal fire does not count as valid warning fire.' },
       { id: 'wf-5', text: 'Even if weapons are drawn, proper warning fire is still required unless a declared gang war, active Section 144 engagement, or robbery-specific rule removes that requirement.' },
     ]
+  },
+  {
+    id: 'safe-zone',
+    title: 'Server Safe Zone (1:30 AM IST)',
+    color: 'warning',
+    rules: [
+      { id: 'sz-1', text: 'After 1:30 AM Indian Standard Time (IST), the entire server and all zones enter safe zone mode.' },
+      { id: 'sz-2', text: 'During safe zone hours, all combat, robberies, gang activities, and hostile situations are prohibited.' },
+      { id: 'sz-3', text: 'Players may only engage in peaceful roleplay, business operations, and non-violent interactions.' },
+      { id: 'sz-4', text: 'Active situations ongoing before 1:30 AM must be concluded before the safe zone begins.' },
+      { id: 'sz-5', text: 'Safe zone violations will result in immediate admin intervention and potential disciplinary action.' },
+    ]
   }
 ];
 
