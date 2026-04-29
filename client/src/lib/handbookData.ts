@@ -117,10 +117,11 @@ export const CITY_RULES: RuleBlock[] = [
     color: 'city',
     rules: [
       { id: 'cz-1', text: 'The City is a law-controlled zone with STCF authority and white-money legality.' },
-      { id: 'cz-2', text: 'Gang activity is prohibited in the City. Gang members entering the City are treated as civilians only.' },
-      { id: 'cz-3', text: 'All City situations must be properly initiated, justified, clearly communicated, and realistically escalated.' },
-      { id: 'cz-4', text: 'Public violence, panic creation, outland-style intimidation, and chaotic escalation are Fail RP.' },
-      { id: 'cz-5', text: 'The City uses strict admin intervention: admins may stop, pause, cancel, or rewind situations to maintain RP quality.' },
+      { id: 'cz-2', text: 'Gang members may initiate situations in the City, but all continuation and escalation must occur in the Outlands.' },
+      { id: 'cz-3', text: 'Once a situation is initiated in the City, gangs must move to the Outlands to continue roleplay, combat, or any further gang activity.' },
+      { id: 'cz-4', text: 'All City situations must be properly initiated, justified, clearly communicated, and realistically escalated.' },
+      { id: 'cz-5', text: 'Public violence, panic creation, outland-style intimidation, and chaotic escalation are Fail RP.' },
+      { id: 'cz-6', text: 'The City uses strict admin intervention: admins may stop, pause, cancel, or rewind situations to maintain RP quality.' },
     ]
   }
 ];
@@ -565,7 +566,7 @@ export const GANG_RULES: RuleBlock[] = [
     color: 'lore',
     rules: [
       { id: 'gb-1', text: 'Joining a gang permanently marks your character as gang-affiliated.' },
-      { id: 'gb-2', text: 'Inside the City, gang members are treated as civilians and may not use gang power, backup, hierarchy, vehicles, clothing, radios, intimidation, or operations.' },
+      { id: 'gb-2', text: 'Inside the City, gang members may initiate situations but may not use gang power, backup, hierarchy, vehicles, clothing, radios, intimidation, or continue operations. All continuation must move to the Outlands.' },
       { id: 'gb-3', text: 'In the Outlands, gang members regain full gang authority and all gang systems apply.' },
       { id: 'gb-4', text: 'Crossing the border changes the rules that apply to you, not your identity.' },
     ]
