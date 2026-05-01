@@ -683,7 +683,7 @@ export const WAR_RULES: RuleBlock[] = [
       { id: 'w-3', text: 'A valid RP reason and face-to-face gang meeting are required before war declaration.', type: 'warning' },
       { id: 'w-4', text: 'Meeting attendance is limited and must be made by leaders or authorized representatives.' },
       { id: 'w-5', text: 'Wars are not permitted inside the City.', type: 'warning' },
-      { id: 'w-6', text: 'A gang war normally permits a maximum of 5 members per gang.', type: 'warning' },
+      { id: 'w-6', text: 'A gang war meeting permits only maximum of 5 members per gang.', type: 'warning' },
       { id: 'w-7', text: 'Post-war cooldown: 72 hours / 3 days before the same two gangs may initiate another war.', type: 'warning' },
       { id: 'w-8', text: 'Maximum ransom in gang-vs-gang hostage situations remains 10 Lakhs.', type: 'warning' },
     ]
