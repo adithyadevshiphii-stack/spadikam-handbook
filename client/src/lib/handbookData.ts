@@ -507,6 +507,17 @@ export const STCF_RULES: RuleBlock[] = [
       { id: 'so-3', text: 'Dirty Cop RP remains prohibited. Proper STCF uniform and STCF vehicles remain mandatory.' },
       { id: 'so-4', text: 'Open war against STCF is not allowed. STCF cannot be treated as a gang.', type: 'warning' },
     ]
+  },
+  {
+    id: 'stcf-application',
+    title: 'STCF Application Requirements',
+    color: 'city',
+    rules: [
+      { id: 'sa-1', text: 'All STCF applicants are required to provide proper, realistic names during the application process.', type: 'warning' },
+      { id: 'sa-2', text: 'Names that are inappropriate, fictional, unrealistic, or unprofessional will not be accepted. Examples of rejected names: W, FTW, LOL, BOT, XD, Dracula, Dragon, etc.', type: 'warning' },
+      { id: 'sa-3', text: 'All applicants must maintain professionalism and roleplay standards at all times.' },
+      { id: 'sa-4', text: 'Failure to follow this guideline may result in application rejection.' },
+    ]
   }
 ];
 
